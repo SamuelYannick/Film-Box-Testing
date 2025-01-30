@@ -1,0 +1,32 @@
+  FIRST THINGS FIRST, FORK THIS REPO AND CLONE IT TO YOUR LOCAL MACHINE.
+
+1. Ensure you're using node version 22 and above.
+  - To verify that run "node -v"
+  - If the version is less than that you can install version 22 and above or the latest one (using nvm install --lts)
+  - Use the recommended version(npm use version 22.something.something) or latest(npm use --lts)
+
+2. Run npm install
+3. Run npm run dev to check the work
+4. Finally test out the features and if you approve of the changes made, update(copy from this Film-Box-Testing repo) the component you worked on 
+   and push the changes to github(the Development branch).
+    --To push follow these steps(Ensure you're on the Development branch)
+     * git fetch origin
+     * git pull origin Development
+     -- After making changes(just copy and paste, bro 👍😁)--
+     * git status
+     * git add <the name of the file that your saw in red/that needs commit>
+     * git commit -m "e.g App Component final changes"
+     * git push origin Development
+     * git switch <your-branch e.g Samuel/App>
+     * git push origin <your-branch e.g Samuel/App>
+
+     Incase the current changes on the Development branch do not reflect on your local machine, follow these steps:
+     --Ensure you're on the Development branch(check using git branch)--
+     * git fetch origin
+     * git reset --hard origin/Development
+     * code . (the changes should appear)
+
+PAY CRITICAL ATTENTION TO THIS MESSAGE AS IF YOUR LIFE DEPENDS ON IT, AND ACT PROMPTLY. THANKS!
+
+Voila 👌
+
