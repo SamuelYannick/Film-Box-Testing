@@ -7,8 +7,12 @@ import MovieContainer from './MovieContainer';
 function App() {
     // State mananger for movies, favorites, watched movies and search results
     const [movies, setMovies] = useState([]);
-    const [favorites, setFavorites] = useState([]);
-    const [watched, setWatched] = useState([]);
+    const [favorites, setFavorites] = useState(() => {
+      return JSON.parse(localStorage.getItem("favorites")) || [];
+    });
+    const [watched, setWatched] = useState(() => {
+      return JSON.parse(localStorage.getItem("watched")) || [];
+    });
     const [searchResults, setSearchResults] = useState([]);
   
     const API_URL = "https://api.themoviedb.org/3/movie/popular";
@@ -28,6 +32,15 @@ function App() {
         setMovies(data.results);
       })
     }, []);
+
+    // Save favorites and watched movies to local storage
+    useEffect(() => {
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    }, [favorites]);
+
+    useEffect(() => {
+      localStorage.setItem("watched", JSON.stringify(watched));
+    }, [watched]);
   
     // Function to add or remove from a list of favorite movies
     function handleFavorite(movie) {

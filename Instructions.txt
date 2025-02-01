@@ -6,9 +6,14 @@
   - Use the recommended version(npm use version 22.something.something) or latest(npm use --lts)
 
 2. Run npm install
+
 3. Run npm run dev to check the work
-4. Finally test out the features and if you approve of the changes made, update(copy from this Film-Box-Testing repo) the component you worked on 
-   and push the changes to github(the Development branch).
+
+EDIT: YOU CAN SKIP THE ABOVE 3 STEPS SINCE I DECIDED TO DEPLOY THIS APPLICATION, PLUS YOU SHOULD ONLY EDIT THE
+      COMPONENT YOU WORKED ON. SKIM THROUGH THE GIT FETCH AND PULL STUFF.
+
+4. Finally test out the features and if you approve of the changes made, update(copy from this Film-Box-Testing repo) 
+  the component you worked on and push the changes to github(the Development branch).
     --To push follow these steps(Ensure you're on the Development branch)
      * git fetch origin
      * git pull origin Development
